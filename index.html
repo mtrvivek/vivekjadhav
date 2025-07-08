@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>vivekjadhav.com</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- //Bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Meddon&family=Rubik+Mono+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- VJ Logo font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Meddon&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Navbar menu font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- P text font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Manrope:wght@200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Manrope:wght@200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Manrope:wght@200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- heading font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Sub heading font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Manrope:wght@200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Manrope:wght@200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Rowdies:wght@300;400;700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Manrope:wght@200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- //CSS Stylesheet link -->
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="Images/favicon.png" />
+  </head>
+  <body>
+    <div id="homepage">
+      <!-- //Background video container -->
+      <div id="main-video-container">
+        <div class="horizontal-video">
+          <video autoplay muted loop class="background-video">
+            <source src="Horizontalblackhole.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="vertical-video">
+          <video autoplay muted loop class="background-video">
+            <source src="verticalblackhole.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <!-- Element on top of the video -->
+
+    <section
+      class="hero-section d-flex flex-column justify-content-center align-items-center text-center text-white"
+    >
+      <h1 class="hero-name mb-2">Vivek Jadhav</h1>
+      <p class="hero-tagline mb-3">
+        Aspiring Web Developer &nbsp;|&nbsp; Filmmaker
+      </p>
+    </section>
+
+    <div class="explore">
+      <h2>
+        <span>E</span><span>X</span><span>P</span><span>L</span><span>O</span
+        ><span>R</span><span>E</span>
+      </h2>
+
+      <div class="explore-button">
+        <!-- Updated button to trigger the modal -->
+        <a
+          class="explore-btn"
+          data-bs-toggle="modal"
+          data-bs-target="#customModal"
+        >
+          <img
+            src="chevron.png"
+            width="30px"
+            alt="Explore Button"
+            class="button-image"
+          />
+        </a>
+      </div>
+    </div>
+
+    <!-- Scrollable Modal -->
+    <div
+      class="modal fade"
+      id="customModal"
+      data-bs-backdrop="false"
+      tabindex="-1"
+      aria-labelledby="customModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="container modal-content">
+          <button
+            type="button"
+            class="close-button"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          >
+            <span class="close-icon">&times;</span>
+          </button>
+
+          <!-- Navbar -->
+          <nav class="navbar navbar-expand-lg navbar-dark container mt-5 pb-5">
+            <a class="navbar-brand" href="#about-me">VJ</a>
+
+            <!-- Toggler for offcanvas -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Offcanvas -->
+            <div
+              class="offcanvas text-bg-dark offcanvas-start"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                <button
+                  type="button"
+                  class="btn-close btn-close-white"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#overview">Overview</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#projects">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#my-creative-side"
+                      >Art Gallery</a
+                    >
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#skills">Skills</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#footer-content"
+                      >Contact Me</a
+                    >
+                  </li>
+
+                  <li class="nav-item d-flex align-items-center">
+                    <a
+                      class="nav-link py-0"
+                      href="https://www.youtube.com/@mr.vivek-j"
+                      target="_blank"
+                    >
+                      <img
+                        src="youtube-logo.png"
+                        alt="YouTube"
+                        class="youtube-icon"
+                        style="width: 25px"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <div class="modal-body body-overlay" style="scroll-behavior: smooth">
+            <!-- Add scrollable content -->
+
+            <section id="about-me">
+              <div class="row align-items-center d-flex justify-content-center">
+                <!-- About Me Text Section -->
+                <div data-aos="fade-right" class="col-md-7">
+                  <h1 class="main-heading headings-style">About Me</h1>
+                  <h6 class="lead welcome-text">Welcome, Explorers!</h6>
+                  <p>
+                    <span style="font-size: larger"> I'm Vivek Jadhav</span> -
+                    aspiring full-stack Web developer, Film-maker, and a side of
+                    <span class="important-text"> Artistic Flair.</span> <br />
+                    <span style="padding-top: 8px; display: inline-block">
+                      I’m from Mumbai, India. Holding a bachelor's degree in
+                      Mass Media and Film-making from University Of Mumbai. I’ve
+                      ventured into the dynamic world of full-stack web
+                      development, blending creativity and technical expertise
+                      to craft meaningful online experiences.
+                    </span>
+                  </p>
+                </div>
+
+                <!-- Portrait Section -->
+                <div class="col-md-5 text-center profile-pic">
+                  <img
+                    src="Profile-pic.jpg"
+                    alt="Vivek Jadhav Portrait"
+                    class="img-fluid profile-image"
+                  />
+                </div>
+              </div>
+            </section>
+            <div class="dot-divider">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <div>
+              <!-- About the website Section -->
+              <section
+                id="overview"
+                class="row gx-0 d-flex justify-content-center align-items-center"
+              >
+                <div class="col-md-6 text-center col-lg-5 Designer-pic">
+                  <img
+                    src="Designer.svg"
+                    alt="Design pic"
+                    class="img-fluid"
+                    style="
+                      background-color: transparent;
+                      width: 350px;
+                      padding-right: 20px;
+                    "
+                  />
+                </div>
+
+                <div class="col-md-6 col-lg-7">
+                  <h1 class="sub-heading headings-style">Quick Overview</h1>
+                  <p>
+                    <span style="font-size: 1.5rem">You </span> might be
+                    thinking,
+                    <span
+                      style="
+                        font-style: italic;
+                        font-weight: bold;
+                        letter-spacing: 1px;
+                      "
+                    >
+                      “Is this a science project? Did I accidentally land on
+                      NASA’s website?”
+                    </span>
+                    Don't worry, You're not alone. but I’m just a cosmic
+                    enthusiast, and that blackhole background is my playful nod
+                    to the universe. Like a black hole pulls everything in, I
+                    get pulled into creative Ideas. This website is a collection
+                    of my interests and efforts — work, art, fashion, and a
+                    little creativity all in one place. Feel free to explore,
+                    and who knows, you might find something that pulls you in
+                    too!
+                  </p>
+                </div>
+              </section>
+
+              <section id="projects">
+                <div class="py-5">
+                  <!-- Title Section -->
+                  <h2 class="heading">My Capstone Projects</h2>
+
+                  <!-- Project Cards Section -->
+                  <div class="row g-4 d-flex justify-content-center">
+                    <!-- Project 1 -->
+                    <div class="col-md-5 col-lg-4">
+                      <div class="card project-card">
+                        <a
+                          href="https://mtrvivek.github.io/Tindog_vivek/11.3%20TinDog%20Project/"
+                          class="card-link"
+                          target="_blank"
+                        >
+                          <img
+                            src="images/Tindog.png"
+                            alt="Tindog Project Screenshot"
+                            class="card-img-top"
+                          />
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Tindog</h5>
+                            <p class="card-text">
+                              Bark, swipe, wag! Tindog connects canine
+                              companions with their perfect match.
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="col-md-5 col-lg-4">
+                      <div class="card project-card">
+                        <a
+                          href="https://ivivekjadhav.github.io/personalsite/CSS-My%20Site/"
+                          class="card-link"
+                          target="_blank"
+                        >
+                          <img
+                            src="images/Resume.png"
+                            alt="Personal Website Screenshot"
+                            class="card-img-top"
+                          />
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Startup project</h5>
+                            <p class="card-text">
+                              Showcasing expertise through a personal capstone
+                              portfolio.
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="col-md-5 col-lg-4">
+                      <div class="card project-card">
+                        <a
+                          href="https://mtrvivek.github.io/tindog-start-master/"
+                          class="card-link"
+                          target="_blank"
+                        >
+                          <img
+                            src="images/Tindog-startup.png"
+                            alt="Tindog Old Version Screenshot"
+                            class="card-img-top"
+                          />
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">
+                              Tindog's Nostalgic Old Version
+                            </h5>
+                            <p class="card-text">
+                              Step back in time and relive the charm of Tindog's
+                              classic version.
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div class="dot-divider">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <section id="my-creative-side">
+              <div class="text-center text-white">
+                <!-- Section Title -->
+                <div class="mb-5">
+                  <h1 class="sub-heading headings-style">My Creative Side</h1>
+                  <p class="fst-italic">
+                    A glimpse into my hobbies — from Hand-drawn stories to video
+                    frames.
+                  </p>
+                </div>
+
+                <!-- Cards Row (WRAP BOTH inside same row!) -->
+                <div class="row justify-content-center gx-lg-5 gx-md-4 gx-3">
+                  <!-- Art Gallery Card -->
+                  <div class="col-md-5 col-lg-4 mx-md-3">
+                    <a
+                      href="artgallery.html"
+                      target="_blank"
+                      class="text-decoration-none text-white"
+                    >
+                      <div class="custom-card">
+                        <div class="ratio ratio-16x9">
+                          <img
+                            src="Images/artgallery cover.png"
+                            class="object-fit-cover w-100 h-100"
+                            alt="Art Gallery Cover"
+                          />
+                        </div>
+                      </div>
+                    </a>
+                    <div class="card-label">Art Gallery</div>
+                    <div
+                      class="card-text mx-auto text-center"
+                      style="max-width: 100%"
+                    >
+                      A small collection of my artworks made with oil pastels,
+                      created recently in moments of quiet. Each piece is an
+                      experiment — inspired by emotion, and imagination. It’s
+                      not a showcase of perfection, just a growing corner of
+                      creativity.
+                    </div>
+                  </div>
+
+                  <!-- YouTube Card -->
+                  <div class="col-md-5 col-lg-4 mx-md-3 youtube-card">
+                    <a
+                      href="https://www.youtube.com/@mr.vivek-j"
+                      target="_blank"
+                      class="text-decoration-none text-white"
+                    >
+                      <div class="custom-card">
+                        <div class="ratio ratio-16x9">
+                          <img
+                            src="Images/youtube cover.png"
+                            class="object-fit-cover w-100 h-100"
+                            alt="YouTube Cover"
+                          />
+                        </div>
+                      </div>
+                    </a>
+                    <div class="card-label">YouTube Channel</div>
+                    <div
+                      class="card-text mx-auto text-center"
+                      style="max-width: 100%"
+                    >
+                      This is where I’ve started sharing my creative work. Right
+                      now, there are just a few videos, but the plan is to post
+                      short films, fashion vlogs, and personal edits over time.
+                      It's early, simple, and evolving with each new upload.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <div class="dot-divider">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <section id="skills" class="skills-section">
+              <div class="container text-center">
+                <h2 class="skills-title headings-style sub-heading">
+                  My Skills
+                </h2>
+
+                <div class="skills-wrapper">
+                  <div class="skills-row">
+                    <div class="skills-item skills-delay-1">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                        alt="HTML"
+                      />
+                      <p>HTML</p>
+                    </div>
+                    <div class="skills-item skills-delay-2">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                        alt="CSS"
+                      />
+                      <p>CSS</p>
+                    </div>
+                    <div class="skills-item skills-delay-3">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                        alt="Bootstrap"
+                      />
+                      <p>Bootstrap</p>
+                    </div>
+                    <div class="skills-item skills-delay-4">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        alt="JavaScript"
+                      />
+                      <p>JavaScript</p>
+                    </div>
+                    <div class="skills-item skills-delay-5">
+                      <img src="Images/github.png" alt="GitHub" />
+                      <p>GitHub</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <div class="dot-divider">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <!-- Section Content -->
+            <section id="footer-content" class="text-white">
+              <div class="container text-center" style="max-width: 700px">
+                <h2 class="fw-bold mb-3">Let’s Connect</h2>
+                <p class="mb-3" style="font-size: 1.1rem">
+                  Thanks for scrolling this far. If something here sparked an
+                  idea or emotion, feel free to reach out. Whether it’s about a
+                  project, feedback, or just a conversation — I’m always open to
+                  creative connections.
+                </p>
+                <p class="fst-italic">Until then, the universe continues...</p>
+
+                <!-- Contact Me Button -->
+                <div class="mt-4">
+                  <a
+                    href="vivek-contact-form/contact.html"
+                    class="btn btn-outline-light px-4 py-2 fw-semibold"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Contact Me
+                  </a>
+                </div>
+
+                <!-- Social Icons -->
+                <div
+                  class="d-flex justify-content-center align-items-center gap-4 mt-4"
+                >
+                  <!-- LinkedIn -->
+                  <a
+                    href="https://www.linkedin.com/in/vivek-jadhav-a62a83372"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+                  >
+                    <img
+                      src="Images/linkedin-logo.png"
+                      alt="LinkedIn"
+                      class="social-icon"
+                    />
+                  </a>
+
+                  <!-- YouTube -->
+                  <a
+                    href="https://www.youtube.com/@mr.vivek-j"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="YouTube"
+                  >
+                    <img
+                      src="Images/youtube.png"
+                      alt="YouTube"
+                      class="social-icon"
+                    />
+                  </a>
+
+                  <!-- GitHub -->
+                  <a
+                    href="https://github.com/mtrvivek"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub"
+                  >
+                    <img
+                      src="Images/github.png"
+                      alt="GitHub"
+                      class="social-icon"
+                    />
+                  </a>
+                </div>
+                <!-- Footer Text -->
+                <p class="mt-4 small text-white-50 mt-5 mb-5">
+                  © 2025 | Designed & Developed by
+                  <strong>Vivek Jadhav</strong> | All rights reserved
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- //Boostrap JS link -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Art Gallery</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Meddon&family=Rubik+Mono+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- VJ Logo font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Meddon&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Navbar menu font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- P text font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Manrope:wght@200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Manrope:wght@200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Manrope:wght@200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- heading font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Sub heading font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Manrope:wght@200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Manrope:wght@200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Rowdies:wght@300;400;700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Manrope:wght@200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: auto;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+        background: linear-gradient(
+          315deg,
+          rgb(141, 26, 70) 3%,
+          rgb(23, 94, 165) 38%,
+          rgb(2, 119, 111) 68%,
+          rgba(48, 0, 77, 0.74) 98%
+        );
+        animation: gradient 70s ease infinite;
+        background-size: 400% 400%;
+        background-attachment: fixed;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 0%;
+        }
+        50% {
+          background-position: 100% 100%;
+        }
+        100% {
+          background-position: 0% 0%;
+        }
+      }
+
+      .wave {
+        background: rgb(255 255 255 / 25%);
+        border-radius: 1000% 1000% 0 0;
+        position: fixed;
+        width: 200%;
+        height: 12em;
+        animation: wave 20s -3s linear infinite;
+        transform: translate3d(0, 0, 0);
+        opacity: 0.8;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      .wave:nth-of-type(2) {
+        bottom: -1.25em;
+        animation: wave 30s linear reverse infinite;
+        opacity: 0.8;
+      }
+
+      .wave:nth-of-type(3) {
+        bottom: -2.5em;
+        animation: wave 35s -1s reverse infinite;
+        opacity: 0.9;
+      }
+
+      @keyframes wave {
+        2% {
+          transform: translateX(1);
+        }
+        25% {
+          transform: translateX(-25%);
+        }
+        50% {
+          transform: translateX(-50%);
+        }
+        75% {
+          transform: translateX(-25%);
+        }
+        100% {
+          transform: translateX(1);
+        }
+      }
+
+      .stars {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -2;
+        pointer-events: none;
+        background: radial-gradient(1px, white, transparent 90%) 5% 10%,
+          radial-gradient(2px, rgb(255, 250, 250), transparent 60%) 10% 20%,
+          radial-gradient(1.5px, white, transparent 60%) 15% 30%,
+          radial-gradient(3px, rgba(255, 255, 255, 0.7), transparent 60%) 25%
+            40%,
+          radial-gradient(2px, rgba(255, 255, 255, 0.9), transparent 60%) 35%
+            50%,
+          radial-gradient(2.5px, white, transparent 60%) 45% 60%,
+          radial-gradient(1px, rgba(255, 255, 255, 0.8), transparent 60%) 55%
+            70%,
+          radial-gradient(2px, white, transparent 60%) 65% 80%,
+          radial-gradient(3px, rgb(255, 255, 255), transparent 60%) 75% 90%,
+          radial-gradient(1.5px, rgba(255, 255, 255, 0.9), transparent 60%) 85%
+            95%;
+        background-size: 200px 200px;
+        animation: stars-blink-1 4s infinite alternate ease-in-out;
+      }
+
+      .stars::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: radial-gradient(1px, white, transparent 90%) 2% 5%,
+          radial-gradient(2px, rgb(255, 250, 250), transparent 60%) 8% 18%,
+          radial-gradient(1.5px, white, transparent 60%) 12% 25%,
+          radial-gradient(3px, rgba(255, 255, 255, 0.7), transparent 60%) 20%
+            35%,
+          radial-gradient(2px, rgba(255, 255, 255, 0.9), transparent 60%) 28%
+            45%,
+          radial-gradient(2.5px, white, transparent 60%) 40% 55%,
+          radial-gradient(1px, rgba(255, 255, 255, 0.8), transparent 60%) 50%
+            65%,
+          radial-gradient(2px, white, transparent 60%) 60% 75%,
+          radial-gradient(3px, rgb(255, 255, 255), transparent 60%) 70% 85%,
+          radial-gradient(1.5px, rgba(255, 255, 255, 0.9), transparent 60%) 80%
+            90%;
+        background-size: 200px 200px;
+        animation: stars-blink-2 2s infinite alternate ease-in-out;
+        opacity: 0.7;
+      }
+
+      .stars::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: radial-gradient(1px, white, transparent 90%) 3% 7%,
+          radial-gradient(2px, rgb(255, 250, 250), transparent 60%) 15% 27%,
+          radial-gradient(1.5px, white, transparent 60%) 22% 40%,
+          radial-gradient(3px, rgba(255, 255, 255, 0.7), transparent 60%) 35%
+            55%,
+          radial-gradient(2px, rgba(255, 255, 255, 0.9), transparent 60%) 50%
+            68%,
+          radial-gradient(2.5px, white, transparent 60%) 65% 80%,
+          radial-gradient(1px, rgba(255, 255, 255, 0.8), transparent 60%) 75%
+            90%,
+          radial-gradient(2px, white, transparent 60%) 85% 95%,
+          radial-gradient(3px, rgb(255, 255, 255), transparent 60%) 90% 98%,
+          radial-gradient(1.5px, rgba(255, 255, 255, 0.9), transparent 60%) 98%
+            100%;
+        background-size: 200px 200px;
+        animation: stars-blink-3 5s infinite alternate ease-in-out;
+        opacity: 0.5;
+      }
+
+      @keyframes stars-blink-1 {
+        0%,
+        100% {
+          opacity: 0.4;
+          filter: brightness(1.5);
+        }
+        50% {
+          opacity: 1;
+          filter: brightness(3.5);
+        }
+      }
+
+      @keyframes stars-blink-2 {
+        0%,
+        100% {
+          opacity: 0.2;
+          filter: brightness(1.2);
+        }
+        50% {
+          opacity: 1;
+          filter: brightness(3);
+        }
+      }
+
+      @keyframes stars-blink-3 {
+        0%,
+        100% {
+          opacity: 0.3;
+          filter: brightness(1.3);
+        }
+        50% {
+          opacity: 1;
+          filter: brightness(2.8);
+        }
+      }
+
+      .heading {
+        font-family: "Libre Baskerville", serif;
+        font-weight: 600;
+        font-style: normal;
+        padding-bottom: 5px;
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+        color: aliceblue;
+        margin: 0;
+
+        /* Subtle text shadow and glow */
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.116),
+          0 0 15px rgba(255, 255, 255, 0.219);
+      }
+
+      #art-description {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 20px;
+        font-family: "Ubuntu", serif;
+        letter-spacing: 1px;
+        color: aliceblue;
+        line-height: 1.8;
+
+        /* Subtle glow */
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.171),
+          0 0 10px rgba(255, 255, 255, 0.2);
+      }
+
+      .gallery img {
+        width: 100%;
+        object-fit: cover; /* Crop images to fit */
+        border: 8px solid white;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+      }
+      .gallery img:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+      }
+
+      .modal {
+        height: 100%;
+      }
+
+      .modal-content img {
+        display: block;
+        margin: auto;
+        display: block;
+        width: 95%;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+
+      @media (max-width: 772px) {
+        br {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+    <div class="stars"></div>
+
+    <!-- Heading -->
+    <div class="container text-center mt-5">
+      <h1 class="heading">My Art Gallery</h1>
+
+      <p id="art-description">
+        Recently, I’ve created a few paintings during my free time using <br />
+        oil pastels. Inspired by a genuine love for art and creativity, this
+        artwork is a simple yet heartfelt expression of my ideas. Each painting
+        holding its own unique story.
+      </p>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="container gallery mt-5 mb-5">
+      <div class="row gx-4 gy-3">
+        <!-- Image 1 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <img
+            src="Vivek artwork/painting (1).jpg"
+            alt="Gallery Image 1"
+            class="img-fluid"
+            data-bs-toggle="modal"
+            data-bs-target="#imageModal1"
+          />
+        </div>
+        <!-- Image 2 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <img
+            src="Vivek artwork/painting (2).jpg"
+            alt="Gallery Image 2"
+            class="img-fluid"
+            data-bs-toggle="modal"
+            data-bs-target="#imageModal2"
+          />
+        </div>
+        <!-- Image 3 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <img
+            src="Vivek artwork/painting (3).jpg"
+            alt="Gallery Image 3"
+            class="img-fluid"
+            data-bs-toggle="modal"
+            data-bs-target="#imageModal3"
+          />
+        </div>
+        <!-- Image 4 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <img
+            src="Vivek artwork/painting (4).jpg"
+            alt="Gallery Image 4"
+            class="img-fluid"
+            data-bs-toggle="modal"
+            data-bs-target="#imageModal4"
+          />
+        </div>
+        <!-- Image 5 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <img
+            src="Vivek artwork/painting (5).jpg"
+            alt="Gallery Image 5"
+            class="img-fluid"
+            data-bs-toggle="modal"
+            data-bs-target="#imageModal5"
+          />
+        </div>
+        <!-- Image 6 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <img
+            src="Vivek artwork/painting (6).jpg"
+            alt="Gallery Image 6"
+            class="img-fluid"
+            data-bs-toggle="modal"
+            data-bs-target="#imageModal6"
+          />
+        </div>
+        <!-- Image 7 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <img
+            src="Vivek artwork/painting (7).jpg"
+            alt="Gallery Image 7"
+            class="img-fluid"
+            data-bs-toggle="modal"
+            data-bs-target="#imageModal7"
+          />
+        </div>
+        <!-- Image 8 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <img
+            src="Vivek artwork/painting (8).jpg"
+            alt="Gallery Image 8"
+            class="img-fluid"
+            data-bs-toggle="modal"
+            data-bs-target="#imageModal8"
+          />
+        </div>
+        <!-- Image 9 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <img
+            src="Vivek artwork/painting (9).jpg"
+            alt="Gallery Image 9"
+            class="img-fluid"
+            data-bs-toggle="modal"
+            data-bs-target="#imageModal9"
+          />
+        </div>
+        <!-- Image 10 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <img
+            src="Vivek artwork/painting (10).jpg"
+            alt="Gallery Image 10"
+            class="img-fluid"
+            data-bs-toggle="modal"
+            data-bs-target="#imageModal10"
+          />
+        </div>
+        <!-- Image 11 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <img
+            src="Vivek artwork/painting (11).jpg"
+            alt="Gallery Image 11"
+            class="img-fluid"
+            data-bs-toggle="modal"
+            data-bs-target="#imageModal11"
+          />
+        </div>
+        <!-- Image 12 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <img
+            src="Vivek artwork/painting (12).jpg"
+            alt="Gallery Image 12"
+            class="img-fluid"
+            data-bs-toggle="modal"
+            data-bs-target="#imageModal12"
+          />
+        </div>
+        <!-- Image 13 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <img
+            src="Vivek artwork/painting (13).jpg"
+            alt="Gallery Image 13"
+            class="img-fluid"
+            data-bs-toggle="modal"
+            data-bs-target="#imageModal13"
+          />
+        </div>
+        <!-- Image 14 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <img
+            src="Vivek artwork/painting (14).jpg"
+            alt="Gallery Image 14"
+            class="img-fluid"
+            data-bs-toggle="modal"
+            data-bs-target="#imageModal14"
+          />
+        </div>
+        <!-- Image 15 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <img
+            src="Vivek artwork/painting (15).jpg"
+            alt="Gallery Image 15"
+            class="img-fluid"
+            data-bs-toggle="modal"
+            data-bs-target="#imageModal15"
+          />
+        </div>
+        <!-- Image 16 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <img
+            src="Vivek artwork/painting (16).jpg"
+            alt="Gallery Image 4"
+            class="img-fluid"
+            data-bs-toggle="modal"
+            data-bs-target="#imageModal16"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Individual Modals -->
+    <!-- Modal 1 -->
+    <div class="modal fade" id="imageModal1" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <img src="Vivek artwork/painting (1).jpg" alt="Gallery Image 1" />
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="imageModal2" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <img src="Vivek artwork/painting (2).jpg" alt="Gallery Image 2" />
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="imageModal3" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <img src="Vivek artwork/painting (3).jpg" alt="Gallery Image 3" />
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="modal fade" id="imageModal4" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <img src="Vivek artwork/painting (4).jpg" alt="Gallery Image 4" />
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 5 -->
+    <div class="modal fade" id="imageModal5" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <img src="Vivek artwork/painting (5).jpg" alt="Gallery Image 5" />
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div class="modal fade" id="imageModal6" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <img src="Vivek artwork/painting (6).jpg" alt="Gallery Image 6" />
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 7 -->
+    <div class="modal fade" id="imageModal7" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <img src="Vivek artwork/painting (7).jpg" alt="Gallery Image 7" />
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 8 -->
+    <div class="modal fade" id="imageModal8" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <img src="Vivek artwork/painting (8).jpg" alt="Gallery Image 8" />
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 9 -->
+    <div class="modal fade" id="imageModal9" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <img src="Vivek artwork/painting (9).jpg" alt="Gallery Image 9" />
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 10 -->
+    <div class="modal fade" id="imageModal10" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <img src="Vivek artwork/painting (10).jpg" alt="Gallery Image 10" />
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 11 -->
+    <div class="modal fade" id="imageModal11" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <img src="Vivek artwork/painting (11).jpg" alt="Gallery Image 11" />
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 12 -->
+    <div class="modal fade" id="imageModal12" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <img src="Vivek artwork/painting (12).jpg" alt="Gallery Image 12" />
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 13 -->
+    <div class="modal fade" id="imageModal13" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <img src="Vivek artwork/painting (13).jpg" alt="Gallery Image 13" />
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 14 -->
+    <div class="modal fade" id="imageModal14" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <img src="Vivek artwork/painting (14).jpg" alt="Gallery Image 14" />
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 15 -->
+    <div class="modal fade" id="imageModal15" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <img src="Vivek artwork/painting (15).jpg" alt="Gallery Image 15" />
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 16 -->
+    <div class="modal fade" id="imageModal16" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <img src="Vivek artwork/painting (16).jpg" alt="Gallery Image 16" />
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
