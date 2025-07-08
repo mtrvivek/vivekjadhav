@@ -689,6 +689,8 @@ margin-top: 100px;
   .horizontal-video {
     display: none;
   }
+
+    .creative-font {font-size: 1.5rem;}
 }
 
 @media (min-width: 599px) {
