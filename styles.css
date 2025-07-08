@@ -436,7 +436,7 @@ p {
   display: inline-block;
   width: 80%; /* Line length as a percentage of container width */
   max-width: 10%; /* Restrict maximum length */
-  min-width: 50px; /* Ensure minimum length */
+  min-width: 10%; /* Ensure minimum length */
   height: 2px; /* Line thickness */
   background-color: #FFD700; /* Golden color for the HR line */
   vertical-align: middle;
