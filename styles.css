@@ -7,7 +7,7 @@ html {
 
 /* Homepage adjustments */
 #homepage {
-  height: 100vh;
+  height: 100dvh;
   overflow: hidden;
 }
 
@@ -97,7 +97,7 @@ body {
 #main-video-container {
   position: relative; /* Makes the container a reference point */
   z-index: -1; /* Send the video behind other content */
-  height: 100vh;
+  height: 100dvh;
 }
 
 .hero-section {
@@ -141,7 +141,7 @@ body {
 
 .background-video {
   position: relative;
-  height: 100vh;
+  height: 100dvh;
   width: 100vw;
   object-fit: cover; /* Ensures the video covers the full screen */
 }
