@@ -685,6 +685,11 @@ margin-top: 100px;
   }
 
     .creative-font {font-size: 1.5rem;}
+
+     .vertical-video {height: 100dvh;}
+
+   .hero-name {font-size: 1.5rem;}
+   .hero-tagline {font-size: 0.7rem;}
 }
 
 @media (min-width: 599px) {
