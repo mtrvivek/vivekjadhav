@@ -1,4 +1,6 @@
 /* Cosmic dark background and layout */
+
+* {color: white;}
 body {
   background: linear-gradient(135deg, #0a0f1f, #1b1b2f);
   color: #fff;
@@ -29,7 +31,7 @@ h1 {
 
 .sub-text {
   font-weight: 300;
-  color: #b0c7e4;
+  color: #ffffff;
 }
 
 /* Form inputs and textarea */
@@ -45,7 +47,7 @@ h1 {
 .form-control:focus {
   outline: none;
   box-shadow: 0 0 8px #5dc4ff;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgb(255, 255, 255);
 }
 
 /* Button style */
