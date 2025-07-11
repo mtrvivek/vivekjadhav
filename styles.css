@@ -651,6 +651,27 @@ margin-top: 100px;
 
 
 /* Responsive Spacing */
+
+@media (min-height: 300px) and (max-height: 800px) {
+  .hero-name {
+    font-size: 1.5rem; /* Reduce h1 size */
+  }
+
+  .hero-tagline {
+    font-size: 0.8rem; /* Reduce p size */
+  }
+
+  .explore h2 span {
+    font-size: 1rem; /* Reduce each letter in "EXPLORE" */
+  }
+
+  .explore-btn img {
+    width: 24px; /* Optional: Slightly reduce button image */
+  }
+}
+
+
+
 @media (max-width: 768px) {
   .heading::before,
   .heading::after {
