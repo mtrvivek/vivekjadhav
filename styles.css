@@ -188,9 +188,7 @@ body {
 
 
 
-.explore-button {
-  margin-top: 5px;
-}
+
 
 .explore-btn {
   display: inline-block;
@@ -239,6 +237,7 @@ body {
 
               display: flex;
               justify-content: center;
+            
              
            
 }
